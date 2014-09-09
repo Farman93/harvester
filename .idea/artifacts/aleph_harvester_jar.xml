@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="aleph-harvester:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/aleph_harvester_jar</output-path>
+    <root id="archive" name="aleph-harvester.jar">
+      <element id="module-output" name="aleph-harvester" />
+    </root>
+  </artifact>
+</component>

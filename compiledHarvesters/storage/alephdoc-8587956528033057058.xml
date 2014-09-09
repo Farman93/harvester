@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mods version="3.4" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <titleInfo>
+    <title>Старик и дикие утки</title>
+    <subTitle>[По англ. сказке]</subTitle>
+  </titleInfo>
+  <name type="personal" usage="primary">
+    <namePart>Гелина, Анна Марковна</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="code">aut</roleTerm>
+    </role>
+  </name>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Москва - Ленинград]</placeTerm>
+    </place>
+    <dateIssued>1930</dateIssued>
+    <publisher>Гос. изд-во</publisher>
+  </originInfo>
+  <note type="statement of responsibility">А. Гелина; Рис. В. Ивановой</note>
+  <subject>
+    <topic>Детская художественная литература - 1920-1930</topic>
+  </subject>
+  <physicalDescription>
+    <extent>15 с. цв. ил.</extent>
+  </physicalDescription>
+  <recordInfo>
+    <recordCreationDate encoding="marc">060322</recordCreationDate>
+    <recordChangeDate encoding="iso8601">0060322145835.</recordChangeDate>
+    <recordIdentifier>U\NLR\DIGIT\3195</recordIdentifier>
+    <recordOrigin>
+        Converted from MARCXML to MODS version 3.4 using UNIMARCSlim2MODS3-4.xsl
+      </recordOrigin>
+  </recordInfo>
+  <extension>
+    <dataField tag="901">
+      <a>Русская классика</a>
+    </dataField>
+  </extension>
+  <extension>
+    <dataField tag="901">
+      <a>bx000001127</a>
+      <d>20101207172000</d>
+      <z>1</z>
+    </dataField>
+  </extension>
+</mods>

@@ -1,0 +1,10 @@
+# This file should
+# be formed the following way:
+# Data Source
+# Initial Catalog
+# User
+# Password
+localhost
+IntegratedDataRepository
+csconnector
+csonnector1!
