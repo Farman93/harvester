@@ -67,6 +67,7 @@
           <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/axis2-transport-local-1.6.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/axis2-soapmonitor-servlet-1.6.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/geronimo-stax-api_1.0_spec-1.0.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/sqljdbc4.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="harvesting-manager/web/Web" />

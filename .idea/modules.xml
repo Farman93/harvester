@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Vivasys/Vivasys.iml" filepath="$PROJECT_DIR$/Vivasys/Vivasys.iml" />
       <module fileurl="file://$PROJECT_DIR$/aleph-harvester/aleph-harvester.iml" filepath="$PROJECT_DIR$/aleph-harvester/aleph-harvester.iml" />
       <module fileurl="file://$PROJECT_DIR$/base-harvester/base-harvester.iml" filepath="$PROJECT_DIR$/base-harvester/base-harvester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enricher/enricher.iml" filepath="$PROJECT_DIR$/enricher/enricher.iml" />
       <module fileurl="file://$PROJECT_DIR$/geonetwork-harvester/geonetwork-harvester.iml" filepath="$PROJECT_DIR$/geonetwork-harvester/geonetwork-harvester.iml" />
       <module fileurl="file://$PROJECT_DIR$/harvesting-manager.iml" filepath="$PROJECT_DIR$/harvesting-manager.iml" />
     </modules>

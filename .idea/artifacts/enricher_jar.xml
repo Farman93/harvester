@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="enricher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/enricher_jar</output-path>
+    <root id="archive" name="enricher.jar">
+      <element id="module-output" name="enricher" />
+    </root>
+  </artifact>
+</component>
