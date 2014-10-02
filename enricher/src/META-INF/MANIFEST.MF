@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: timePackage.EnricherTimer
+Class-Path: sqljdbc4.jar
+Main-Class: ru.umeta.harvesting.enrichment.EnrichmentTimer
 
