@@ -6,13 +6,17 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+/**
+ * if jdbc is not imported it will not compile. Compile error is better than run time one.
+ */
+import com.microsoft.sqlserver.jdbc.SQLServerDriver;
 
 /**
  * Created by k.kosolapov on 16.09.2014.
  */
-public class Database {
+public class DatabaseConnector {
 
-    private Connection getConnection() throws ClassNotFoundException, SQLException, FileNotFoundException {
+    private static Connection getConnection() throws ClassNotFoundException, SQLException, FileNotFoundException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         final ResourceBundle bundle = ResourceBundle.getBundle("database");
         final String server = bundle.getString("database");
@@ -21,7 +25,7 @@ public class Database {
         return DriverManager.getConnection("jdbc:sqlserver://"+ server, user, pass);
     }
 
-    public List<Document> checkNew() throws ClassNotFoundException, SQLException, FileNotFoundException {
+    public static List<Document> checkNew() throws ClassNotFoundException, SQLException, FileNotFoundException {
         try (Connection conn = getConnection()) {
             List<Document> documents = new ArrayList<>();
             Statement statement = conn.createStatement();
@@ -38,7 +42,7 @@ public class Database {
         }
     }
 
-    public Document getEnrichedDocument(Document source) throws FileNotFoundException, SQLException, ClassNotFoundException {
+    public static Document getEnrichedDocument(Document source) throws FileNotFoundException, SQLException, ClassNotFoundException {
         try (Connection conn = getConnection()) {
             Statement statement = conn.createStatement();
             final String sourceIsbn = source.isbn;
@@ -67,7 +71,7 @@ public class Database {
 
     }
 
-    public boolean createEnrichedDocument(Document source) throws FileNotFoundException, SQLException, ClassNotFoundException {
+    public static boolean createEnrichedDocument(Document source) throws FileNotFoundException, SQLException, ClassNotFoundException {
         try (Connection conn = getConnection()) {
             Statement statement = conn.createStatement();
             final String title = source.title;
@@ -78,7 +82,7 @@ public class Database {
         }
     }
 
-    public boolean setEnrichedForDocument(int source_id, int enriched_id) throws FileNotFoundException, SQLException, ClassNotFoundException {
+    public static boolean setEnrichedForDocument(int source_id, int enriched_id) throws FileNotFoundException, SQLException, ClassNotFoundException {
         try (Connection conn = getConnection()) {
             Statement statement = conn.createStatement();
             String query = MessageFormat.format("UPDATE dbo.Document SET enriched_id = {0} WHERE id = {1}", enriched_id, source_id);
@@ -86,7 +90,7 @@ public class Database {
         }
     }
 
-    public boolean updateEnrichedDocument(Document enriched) throws FileNotFoundException, SQLException, ClassNotFoundException {
+    public static boolean updateEnrichedDocument(Document enriched) throws FileNotFoundException, SQLException, ClassNotFoundException {
         try (Connection conn = getConnection()) {
             Statement statement = conn.createStatement();
             final int id = enriched.id;

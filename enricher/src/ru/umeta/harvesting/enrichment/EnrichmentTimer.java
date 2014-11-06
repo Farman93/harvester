@@ -17,7 +17,7 @@ public class EnrichmentTimer {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                final Database database = new Database();
+                final DatabaseConnector database = new DatabaseConnector();
                 try {
                     List<Document> documentList = database.checkNew();
                     if (documentList != null && documentList.size() > 0) {
